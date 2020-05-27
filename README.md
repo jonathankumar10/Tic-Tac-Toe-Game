@@ -1,3 +1,11 @@
 # Tic-Tac-Toe-MilestoneProject-1
 
-Tic-Tac-Toe is a really simple game, is it not??
+To implement a simple Tic-Tac-Toe game using python.
+
+To Run File:
+
+Go to the file location and open the command prompt and then type below command:
+
+    python Main.py
+
+
