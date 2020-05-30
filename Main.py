@@ -17,20 +17,6 @@ root.title("Tic Tac Toe")
 title = Label(frameTop, text="Tic Tac Toe", justify=CENTER, font="times 25", bd = 20, fg='Blue', bg='white')
 title.grid(row=0,column=0)
 
-buttons = StringVar()
-click = True
-
-def checker(buttons):
-    global click
-    if buttons["text"] == " " and click == True:
-        buttons["text"] = "X"
-        click = False
-
-    elif buttons["text"] == " " and click == False:
-        buttons["text"] = "O"
-        click = True
-
-
 text1 = Entry(frame)
 title.grid(row=0,column=2)
 
@@ -56,11 +42,24 @@ newGame.grid(row=1,column=3)
 resetGame = Button(frame, text="Reset game", font="times 20")
 resetGame.grid(row=2,column=3)
 
+buttons = StringVar()
+click = True
+
 playerX = IntVar()
 playerO = IntVar()
 
 playerX.set(0)
 playerO.set(0)
+
+def checker(buttons):
+    global click
+    if buttons["text"] == " " and click == True:
+        buttons["text"] = "X"
+        click = False
+
+    elif buttons["text"] == " " and click == False:
+        buttons["text"] = "O"
+        click = True
 
 b1 = Button(frame, width = 20, height = 10, command = lambda: checker(b1))
 b1.grid(row=3,column=1)
