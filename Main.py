@@ -61,31 +61,31 @@ def checker(buttons):
         buttons["text"] = "O"
         click = True
 
-b1 = Button(frame, width = 20, height = 10, command = lambda: checker(b1))
+b1 = Button(frame, width = 20, text=" " ,height = 10, command = lambda: checker(b1))
 b1.grid(row=3,column=1)
 
-b2 = Button(frame, width = 20, height = 10, command = lambda: checker(b2))
+b2 = Button(frame, width = 20, text=" " , height = 10, command = lambda: checker(b2))
 b2.grid(row=3,column=2)
 
-b3 = Button(frame, width = 20, height = 10, command = lambda: checker(b3))
+b3 = Button(frame, width = 20, text=" " , height = 10, command = lambda: checker(b3))
 b3.grid(row=3,column=3)
 
-b4 = Button(frame, width = 20, height = 10, command = lambda: checker(b4))
+b4 = Button(frame, width = 20, text=" " , height = 10, command = lambda: checker(b4))
 b4.grid(row=4,column=1)
 
-b5 = Button(frame, width = 20, height = 10, command = lambda: checker(b5))
+b5 = Button(frame, width = 20, text=" " , height = 10, command = lambda: checker(b5))
 b5.grid(row=4,column=2)
 
-b6 = Button(frame, width = 20, height = 10, command = lambda: checker(b6))
+b6 = Button(frame, width = 20, text=" " , height = 10, command = lambda: checker(b6))
 b6.grid(row=4,column=3)
 
-b7 = Button(frame, width = 20, height = 10, command = lambda: checker(b7))
+b7 = Button(frame, width = 20, text=" " , height = 10, command = lambda: checker(b7))
 b7.grid(row=5,column=1)
 
-b8 = Button(frame, width = 20, height = 10, command = lambda: checker(b8))
+b8 = Button(frame, width = 20, text=" " , height = 10, command = lambda: checker(b8))
 b8.grid(row=5,column=2)
 
-b9 = Button(frame, width = 20, height = 10, command = lambda: checker(b9))
+b9 = Button(frame, width = 20, text=" " , height = 10, command = lambda: checker(b9))
 b9.grid(row=5,column=3)
 
 root.mainloop()
