@@ -26,7 +26,6 @@ title.grid(row=1,column=2)
 name1 = Label(frame, text="Player 1 : X", font="times 20")
 name1.grid(row=1,column=1)
 
-
 name2 = Label(frame, text="Player 2 : 0", font="times 20")
 name2.grid(row=2,column=1)
 
@@ -36,11 +35,6 @@ space1.grid(row=1,column=2)
 space2 = Label(frame, text="      ", font="times 20")
 space2.grid(row=2,column=2)
 
-newGame = Button(frame, text="New Game", font="times 20")
-newGame.grid(row=1,column=3)
-
-resetGame = Button(frame, text="Reset game", font="times 20")
-resetGame.grid(row=2,column=3)
 
 buttons = StringVar()
 click = True
@@ -60,6 +54,29 @@ def checker(buttons):
     elif buttons["text"] == " " and click == False:
         buttons["text"] = "O"
         click = True
+
+def reset():
+    b1['text'] = " "
+    b2['text'] = " "
+    b3['text'] = " "
+    b4['text'] = " "
+    b5['text'] = " "
+    b6['text'] = " "
+    b7['text'] = " "
+    b8['text'] = " "
+    b9['text'] = " "
+
+def newGame():
+    reset()
+    playerX.set(0)
+    playerO.set(0)
+
+newGame = Button(frame, text="New Game", font="times 20", command = newGame)
+newGame.grid(row=1,column=3)
+
+resetGame = Button(frame, text="Reset game", font="times 20", command = reset)
+resetGame.grid(row=2,column=3)
+
 
 b1 = Button(frame, width = 20, text=" " ,height = 10, command = lambda: checker(b1))
 b1.grid(row=3,column=1)
