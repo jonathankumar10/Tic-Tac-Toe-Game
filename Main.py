@@ -1,4 +1,5 @@
 from tkinter import *
+import tkinter.messagebox
 
 
 root = Tk()
@@ -37,10 +38,12 @@ def checker(buttons):
     if buttons["text"] == " " and click == True:
         buttons["text"] = "X"
         click = False
+        scorechecker()
 
     elif buttons["text"] == " " and click == False:
         buttons["text"] = "O"
         click = True
+        scorechecker()
 
 def reset():
     b1['text'] = " "
@@ -59,7 +62,101 @@ def newGame():
     playerO.set(0)
 
 def scorechecker():
-    pass
+    if b1["text"]=='X' and b2["text"]=='X' and b3["text"]=='X':
+        n = float(playerX.get())
+        score = n+1
+        playerX.set(score)
+        tkinter.messagebox.showinfo("Winner X","Player X just won the game. Congradulations!!")
+    
+    if b4["text"]=='X' and b5["text"]=='X' and b6["text"]=='X':
+        n = float(playerX.get())
+        score = n+1
+        playerX.set(score)
+        tkinter.messagebox.showinfo("Winner X","Player X just won the game. Congradulations!!")
+
+    if b7["text"]=='X' and b8["text"]=='X' and b9["text"]=='X':
+        n = float(playerX.get())
+        score = n+1
+        playerX.set(score)
+        tkinter.messagebox.showinfo("Winner X","Player X just won the game. Congradulations!!")
+
+    if b1["text"]=='X' and b5["text"]=='X' and b9["text"]=='X':
+        n = float(playerX.get())
+        score = n+1
+        playerX.set(score)
+        tkinter.messagebox.showinfo("Winner X","Player X just won the game. Congradulations!!")
+
+    if b3["text"]=='X' and b5["text"]=='X' and b7["text"]=='X':
+        n = float(playerX.get())
+        score = n+1
+        playerX.set(score)
+        tkinter.messagebox.showinfo("Winner X","Player X just won the game. Congradulations!!")
+
+    if b1["text"]=='X' and b4["text"]=='X' and b7["text"]=='X':
+        n = float(playerX.get())
+        score = n+1
+        playerX.set(score)
+        tkinter.messagebox.showinfo("Winner X","Player X just won the game. Congradulations!!")
+
+    if b2["text"]=='X' and b5["text"]=='X' and b8["text"]=='X':
+        n = float(playerX.get())
+        score = n+1
+        playerX.set(score)
+        tkinter.messagebox.showinfo("Winner X","Player X just won the game. Congradulations!!")
+    
+    if b3["text"]=='X' and b6["text"]=='X' and b9["text"]=='X':
+        n = float(playerX.get())
+        score = n+1
+        playerX.set(score)
+        tkinter.messagebox.showinfo("Winner X","Player X just won the game. Congradulations!!")
+    
+    if b1["text"]=='O' and b2["text"]=='O' and b3["text"]=='O':
+        n = float(playerO.get())
+        score = n+1
+        playerO.set(score)
+        tkinter.messagebox.showinfo("Winner O","Player O just won the game. Congradulations!!")
+    
+    if b4["text"]=='O' and b5["text"]=='O' and b6["text"]=='O':
+        n = float(playerO.get())
+        score = n+1
+        playerO.set(score)
+        tkinter.messagebox.showinfo("Winner O","Player O just won the game. Congradulations!!")
+
+    if b7["text"]=='O' and b8["text"]=='O' and b9["text"]=='O':
+        n = float(playerO.get())
+        score = n+1
+        playerO.set(score)
+        tkinter.messagebox.showinfo("Winner O","Player O just won the game. Congradulations!!")
+
+    if b1["text"]=='O' and b5["text"]=='O' and b9["text"]=='O':
+        n = float(playerO.get())
+        score = n+1
+        playerO.set(score)
+        tkinter.messagebox.showinfo("Winner O","Player O just won the game. Congradulations!!")
+
+    if b3["text"]=='O' and b5["text"]=='O' and b7["text"]=='O':
+        n = float(playerO.get())
+        score = n+1
+        playerO.set(score)
+        tkinter.messagebox.showinfo("Winner O","Player O just won the game. Congradulations!!")
+
+    if b1["text"]=='O' and b4["text"]=='O' and b7["text"]=='O':
+        n = float(playerO.get())
+        score = n+1
+        playerO.set(score)
+        tkinter.messagebox.showinfo("Winner O","Player O just won the game. Congradulations!!")
+
+    if b2["text"]=='O' and b5["text"]=='O' and b8["text"]=='O':
+        n = float(playerO.get())
+        score = n+1
+        playerO.set(score)
+        tkinter.messagebox.showinfo("Winner O","Player O just won the game. Congradulations!!")
+    
+    if b3["text"]=='O' and b6["text"]=='O' and b9["text"]=='O':
+        n = float(playerO.get())
+        score = n+1
+        playerO.set(score)
+        tkinter.messagebox.showinfo("Winner O","Player O just won the game. Congradulations!!")
 
 name1 = Label(frame, text="Player 1 : X", font="times 20")
 name1.grid(row=1,column=1)
