@@ -23,19 +23,6 @@ title.grid(row=0,column=2)
 text2 = Entry(frame)
 title.grid(row=1,column=2)
 
-name1 = Label(frame, text="Player 1 : X", font="times 20")
-name1.grid(row=1,column=1)
-
-name2 = Label(frame, text="Player 2 : 0", font="times 20")
-name2.grid(row=2,column=1)
-
-space1 = Label(frame, text="      ", font="times 20")
-space1.grid(row=1,column=2)
-
-space2 = Label(frame, text="      ", font="times 20")
-space2.grid(row=2,column=2)
-
-
 buttons = StringVar()
 click = True
 
@@ -70,6 +57,21 @@ def newGame():
     reset()
     playerX.set(0)
     playerO.set(0)
+
+def scorechecker():
+    pass
+
+name1 = Label(frame, text="Player 1 : X", font="times 20")
+name1.grid(row=1,column=1)
+
+playerXEntry = Entry(frame, textvariable = playerX, width = 14, bd=4, justify = LEFT, font = 30)
+playerXEntry.grid(row=1,column=2)
+
+name2 = Label(frame, text="Player 2 : 0", font="times 20")
+name2.grid(row=2,column=1)
+
+playerOEntry = Entry(frame, textvariable = playerO, width = 14, bd =4, justify = LEFT,  font = 30)
+playerOEntry.grid(row=2,column=2)
 
 newGame = Button(frame, text="New Game", font="times 20", command = newGame)
 newGame.grid(row=1,column=3)
