@@ -33,6 +33,7 @@ playerO = IntVar()
 playerX.set(0)
 playerO.set(0)
 
+#checker() function checks to see wheather a button has X or O value or is it free to be used and then calls scorechecker() function.
 def checker(buttons):
     global click
     if buttons["text"] == " " and click == True:
@@ -45,6 +46,7 @@ def checker(buttons):
         click = True
         scorechecker()
 
+#reset() function restores all the clicks made on buttons to play the game and returns their value to ' '
 def reset():
     b1['text'] = " "
     b2['text'] = " "
@@ -56,11 +58,14 @@ def reset():
     b8['text'] = " "
     b9['text'] = " "
 
+#newGame() function resets the game and start the game as a new game.
 def newGame():
     reset()
     playerX.set(0)
     playerO.set(0)
 
+
+#scorechecker() function checks to see if either Player X or Player O manages to get 3 X or 3 O's and increases the score of either Player X or Player O accordingly.
 def scorechecker():
     if b1["text"]=='X' and b2["text"]=='X' and b3["text"]=='X':
         n = float(playerX.get())
@@ -176,7 +181,7 @@ newGame.grid(row=1,column=3)
 resetGame = Button(frame, text="Reset game", font="times 20", command = reset)
 resetGame.grid(row=2,column=3)
 
-
+#b1 to b9 form the buttons which give X or O for the game
 b1 = Button(frame, width = 20, text=" " ,height = 10, command = lambda: checker(b1))
 b1.grid(row=3,column=1)
 
