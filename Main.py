@@ -181,7 +181,7 @@ newGame.grid(row=1,column=3)
 resetGame = Button(frame, text="Reset game", font="times 20", command = reset)
 resetGame.grid(row=2,column=3)
 
-#b1 to b9 form the buttons which give X or O for the game
+#b1 to b9 form the buttons which give X or O for the game GUI.
 b1 = Button(frame, width = 20, text=" " ,height = 10, command = lambda: checker(b1))
 b1.grid(row=3,column=1)
 
