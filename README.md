@@ -1,4 +1,4 @@
-# Tic-Tac-Toe-MilestoneProject-1
+# Tic-Tac-Toe-Game
 
 To implement a simple Tic-Tac-Toe game using python using the Tkinter library.
 
