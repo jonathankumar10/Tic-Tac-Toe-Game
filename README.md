@@ -1,12 +1,10 @@
 # Tic-Tac-Toe-Game
 
-To implement a simple Tic-Tac-Toe game using python using the Tkinter library.
+Implemented a simple Tic-Tac-Toe game.
 
-To Run the Game:
+Used python's Tkinter library for the implementation.
 
-Go to the file location and open the command prompt and then type below command:
-
-    python Main.py
+Created a Tic Tac Toe Game with a Tkinter GUI. This GUI has Player 1 Score, Player 2 Score, New Game and Reset Game option. Winner recieves a pop up congradulating them on winning the game.
 
 The reference for this project was taken from an online course I had taken for python on Udemy and also from a youtube video by DJ Oamen.
 Links to both availabe below.
